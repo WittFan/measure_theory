@@ -1,8 +1,9 @@
 import sys,os
-import gevent
+import time
 os.system("git status")
 os.system("git add *")
-os.system("git commit -m 'add files'")
+now=time.ctime
+os.system("git commit -m '%s'" %now)
 os.system("git push")
 os.system("")
 os.system("")
